@@ -1,35 +1,45 @@
 """Ports and domain models for the package_name package."""
 
 import abc
-import pathlib
+import dataclasses
 
 # ------- Global constants ------- #
+# * Constants that are used throughout the package
+
+TIME_FMT = "%Y%m%dT%H%M"
 
 # ------- Domain models ------- #
+# Representations of data within the application domain
 
 
-class PersonData(abc.ABC):
-    """Information about a person."""
+@dataclasses.dataclass
+class PersonDataModel:
+    """Struct representing format of data internal to the service."""
+    forename: str
+    surname: str
+    age: int
 
-    @abc.abstractmethod
-    def name(self) -> str:
-        """Return the name of the person."""
-        pass
-
-    @abc.abstractmethod
-    def age(self) -> int:
-        """Return the age of the person."""
-        pass
 
 # ------- Interfaces ------- #
 # * Represent ports in the hexagonal architecture pattern
+
+class FetcherInterface(abc.ABC):
+    """Generic interface for fetching data."""
+
+    @abc.abstractmethod
+    def fetch(self) -> PersonDataModel:
+        """Fetch a person and map it to the domain model.
+
+        :return: The internal representation of the data.
+        """
+        pass
 
 
 class StorerInterface(abc.ABC):
     """Generic interface for storing data."""
 
     @abc.abstractmethod
-    def save(self, *, p: pathlib.Path) -> int:
+    def save(self, *, p: PersonDataModel) -> int:
         """Save the data at the given path to the store.
 
         :param p: The path to the data.

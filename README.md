@@ -34,20 +34,17 @@ Whether running via Docker or the Python package, available commands can be foun
 `--help` flag. For example:
 
 ```shell
-$ nwp-consumer --help
+$ package-name --help
 # or
-$ docker run ghcr.io/openclimatefix/nwp-consumer:latest --help
+$ docker run ghcr.io/user/package-name:latest --help
 ```
 
 ## Ubiquitous Language
 
 The following terms are used throughout the codebase and documentation. They are defined here to avoid ambiguity.
 
-- ***InitTime*** - The time at which a forecast is initialised. For example, a forecast initialised at 12:00 on 1st 
-January.
-
-- ***TargetTime*** - The time at which a predicted value is valid. For example, a forecast with InitTime 12:00 on 1st 
-January predicts that the temperature at TargetTime 12:00 on 2nd January at position x will be 10 degrees.
+- ***Ubiquitous Language*** - The language describing terms relevant to the bounded context of the service. These are
+ high-level business descriptions of the function of the application, not code-specific terms.
 
 
 ## Repository structure
