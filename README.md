@@ -6,13 +6,13 @@ Template for creating src-layout PEP628 compliant hexagonal python microservice.
 
 <div align="center">
 
-<a href="https://github.com/owner/package-name/graphs/contributors" alt="Contributors">
-    <img src="https://img.shields.io/github/contributors/owner/package-name?style=for-the-badge" /></a>
-<a href="https://github.com/owner/package-name/actions/workflows/ci.yml">
-    <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/owner/package-name/ci.yml?branch=main&style=for-the-badge"></a>
-<a href="https://github.com/owner/package-name/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
-    <img src="https://img.shields.io/github/issues/owner/package-name?style=for-the-badge"></a>
-<a href="https://github.com/owner/package-name/tags">
+<a href="https://github.com/devsjc/python-project-structure/graphs/contributors" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/devsjc/python-project-structure?style=for-the-badge" /></a>
+<a href="https://github.com/devsjc/python-project-structure/actions/workflows/ci.yml">
+    <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/devsjc/python-project-structure/ci.yml?branch=main&style=for-the-badge"></a>
+<a href="https://github.com/devsjc/python-project-structure/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
+    <img src="https://img.shields.io/github/issues/devsjc/python-project-structure?style=for-the-badge"></a>
+<a href="https://github.com/devsjc/python-project-structure/tags">
     <img alt="GitHub tag (latest SemVer pre-release)" src="https://img.shields.io/github/v/tag/openclimatefix/package-name?include_prereleases&sort=semver&style=for-the-badge"></a>
 <a href="https://pypi.org/project/package-name">
     <img alt="PyPI tag (latest SemVer pre-release)" src="https://img.shields.io/pypi/v/package-name?style=for-the-badge"></a>
@@ -20,7 +20,9 @@ Template for creating src-layout PEP628 compliant hexagonal python microservice.
 
 <br>
 
-Paragraph describing what the package does here.
+Repo containing a template for creating a modern Python microservice. The template is designed to contain the important
+parts of a Hexagonal python microservice, with a minimal dockerfile and a CI workflow that builds and tests the service.
+It uses modern python standards, such as pyproject.toml and src-layout, and is designed to be easily extended.
 
 ## Running the service
 
