@@ -22,7 +22,8 @@ Template for creating src-layout PEP628 compliant hexagonal python microservice.
 
 Repo containing a template for creating a modern Python microservice. The template is designed to contain the important
 parts of a Hexagonal python microservice, with a minimal dockerfile and a CI workflow that builds and tests the service.
-It uses modern python standards, such as pyproject.toml and src-layout, and is designed to be easily extended.
+It uses modern python standards, such as pyproject.toml and src-layout, and is designed to be easily extended. The
+contents of this README are an example of what you might expect to find in a well-documented service.
 
 ## Running the service
 
